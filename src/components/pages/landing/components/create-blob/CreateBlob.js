@@ -2,9 +2,6 @@ import { useState } from 'react';
 import Konva from 'konva';
 import { Stage, Layer, Line } from 'react-konva';
 
-import React from '@types/react';
-import Button from 'react-bootstrap/Button';
-
 export default function CreateBlob() {
   const [blobs, setBlobs] = useState([]);
   const handelCreateBlob = () => {
@@ -19,10 +16,8 @@ export default function CreateBlob() {
   };
   return (
     <>
-      <Button variant="success" onClick={handelCreateBlob}>
-        Success
-      </Button>
-      <Stage width={window.innerWidth} height={window.innerHeight}>
+      <button onClick={handelCreateBlob}> CreateBlob</button>
+      <Stage width={700} height={700}>
         <Layer>
           {blobs.map((blob, i) => (
             <Line
