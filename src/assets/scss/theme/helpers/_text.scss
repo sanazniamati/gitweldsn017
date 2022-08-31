@@ -1,0 +1,14 @@
+
+//Font family
+.font-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+//Error Page
+.fs-error {
+  font-size: 7rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 10rem;
+  }
+}
+
